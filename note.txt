@@ -1,0 +1,29 @@
+#1_venv steps:
+
+mkdir folder
+cd folder 
+
+#2_create it:
+python3 -m venv venvname
+#2 or create venv with access to the system libraries:
+python3 -m venv my_env --system-site-packages 
+
+
+source venvname/bin/activate
+
+pip3 install package_name
+
+deactivate
+
+# to know which python used in the venv 
+which python
+or
+python --version
+
+#to save the requirements in a text file 
+
+pip freeze > requirements.txt
+
+# to install requirement from a txt file:
+
+pip install -r requirements.txt
